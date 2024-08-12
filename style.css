@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   background-color: black;
+  color: white;
 }
 
 html,
@@ -22,7 +23,7 @@ body {
     180deg,
     rgb(17, 17, 17),
     rgba(119, 119, 119, 0) 100%
-  ); */
+  );  */
   padding-top: 24px;
 }
 
@@ -126,4 +127,61 @@ nav .logo h1 {
 .CTA button.highlight {
   background-color: rgba(230, 83, 60, 0.85);
   border: none;
+}
+.habit {
+  width: 100%;
+  padding: 20px; /* Adds some padding around the content */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center align children horizontally */
+  background-color: black; /* Optional: background color for visibility */
+}
+
+.habitTitle {
+  text-align: center;
+  margin-bottom: 20px; /* Adds space between title and images */
+}
+
+.habitTitle h2 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.habitTitle p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.habitImage {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  text-align: center;
+}
+
+.img {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center text horizontally */
+}
+
+.img img {
+  width: 272px;
+  height: 272px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 32px;
+}
+.img h4 {
+  margin-top: 32px;
+}
+
+.img p {
+  /* Space above text */
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
 }
