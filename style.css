@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grey+Qo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: Inter;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 900px;
+  /* background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  ); */
+  padding-top: 24px;
+}
+
+nav .logo h1 {
+  color: rgb(230, 83, 60);
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 190px;
+  margin-right: 190px;
+}
+
+.option .highlight {
+  color: white;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 45px;
+  background-color: rgba(230, 83, 60, 0.85);
+  cursor: pointer;
+}
+
+.option button {
+  background: none;
+  color: white;
+  border: none;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.HeroContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-top: 62px;
+}
+
+.shape {
+  font-family: "Grey Qo", cursive;
+  font-weight: 500;
+}
+
+.rightSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.rightSide img {
+  max-width: 100%;
+  height: auto;
+}
+
+.leftSide h1 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 78px;
+  font-weight: 900;
+}
+
+.leftSide p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.leftSide {
+  /* border: 1px solid blue; */
+  margin-left: 190px;
+  width: 50%;
+  height: 439px;
+}
+/* General button styles */
+.CTA button {
+  margin-top: 24px;
+  color: white;
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 42px;
+  background: none;
+  cursor: pointer;
+}
+
+/* Highlighted button styles */
+.CTA button.highlight {
+  background-color: rgba(230, 83, 60, 0.85);
+  border: none;
+}
