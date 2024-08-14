@@ -62,7 +62,7 @@ nav .logo h1 {
 }
 
 .option i {
-  display: none; 
+  display: none;
 }
 
 /* Hero section styles */
@@ -191,15 +191,152 @@ nav .logo h1 {
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
 }
+/* Run & extra */
+.runExtra {
+  /* border: 1px solid red; */
+  margin: 5% 16%;
+  display: flex;
+  align-items: center;
+  gap: 15%;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+}
+.runText {
+  /* border: 1px solid blue; */
+  margin-left: 5%;
+  margin-top: 2%;
+  background: transparent;
+  width: 50%;
+}
+.runText h1 {
+  font-size: 48px;
+  font-weight: 900;
+  background: rgb(34, 34, 34);
+}
+.runText p {
+  font-size: 14px;
+  font-weight: 400;
+  background: rgb(34, 34, 34);
+  margin-top: 16px;
+}
+.runText .highlight {
+  /* border: 1px solid blue; */
+  color: white;
+  background-color: rgba(230, 83, 60, 0.85);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 42px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 24px;
+}
+.imgSide {
+  /* border: 1px solid yellow; */
+  margin-right: 5%;
+  margin-top: 2%;
+  width: 50%;
+  border-radius: 18px;
+  overflow: hidden;
+}
 
+.imgSide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 18px;
+}
+/* meet Team */
+.meetTeam {
+  /* border: 1px solid red; */
+  margin: 5% 16%;
+  /* background: rgb(34, 34, 34); */
+  text-align: center;
+}
+.meetText {
+  margin: 2% 20%;
+}
+.meetText h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+.meetText p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  margin-top: 16px;
+  text-align: center;
+}
+.ImgTeam {
+  width: 1060px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 16px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 272px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.imageWrapper img {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 18px; */
+  border: 18px;
+}
+.imageWrapper h4,
+p {
+  background: transparent;
+}
+
+.textOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  background: transparent;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.textOverlay h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.textOverlay p {
+  font-size: 14px;
+  margin: 4px 0 0 0;
+  color: rgba(255, 255, 255, 0.7);
+}
 /* Responsive styles for screens up to 576px */
 @media (max-width: 576px) {
   .option button {
-    display: none; 
+    display: none;
   }
 
   .option i {
-    display: block; 
+    display: block;
     font-size: 24px;
     cursor: pointer;
   }
@@ -213,47 +350,58 @@ nav .logo h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px; 
-    padding: 20px; 
+    margin-top: 20px;
+    padding: 20px;
   }
 
   .rightSide img {
     width: 100%;
-    max-width: 300px; 
+    max-width: 300px;
     height: auto;
   }
 
   .leftSide h1 {
-    font-size: 48px; 
+    font-size: 48px;
   }
 
   .leftSide p {
-    font-size: 14px; 
+    font-size: 14px;
   }
 
   .leftSide {
-    margin-left: 0; 
-    width: 100%; 
-    margin-bottom: 40px; 
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 40px;
   }
 
   .habit {
     padding: 20px;
-    margin-top: 40px; 
+    margin-top: 40px;
   }
 
   .habitImage {
-    flex-direction: column; 
-    gap: 20px; 
+    flex-direction: column;
+    gap: 20px;
   }
 
   .img img {
-    width: 100%; 
-    max-width: 200px; 
+    width: 100%;
+    max-width: 200px;
     height: auto;
   }
 
   .img h4 {
-    margin-top: 16px; 
+    margin-top: 16px;
+  }
+  .ImgTeam {
+    width: 313px;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    overflow: hidden;
+  }
+
+  .imageWrapper {
+    width: 280px;
+    height: 272px;
   }
 }
