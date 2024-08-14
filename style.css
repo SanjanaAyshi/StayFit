@@ -33,6 +33,7 @@ nav .logo h1 {
 
 .navBar {
   display: flex;
+  gap: 120px;
   justify-content: space-between;
   margin-left: 190px;
   margin-right: 190px;
@@ -329,6 +330,74 @@ p {
   margin: 4px 0 0 0;
   color: rgba(255, 255, 255, 0.7);
 }
+/* Footer section */
+footer {
+  width: 100%;
+  padding: 40px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #111;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+footer .compartment {
+  margin-bottom: 20px;
+  flex: 1;
+  min-width: 200px;
+  background: transparent;
+}
+
+footer .compartment h1 {
+  margin-bottom: 16px;
+  font-size: 70px;
+  font-weight: 800;
+  font-style: italic;
+  color: rgb(230, 83, 60);
+  background: transparent;
+}
+footer .compartment h4 {
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 700;
+  background: transparent;
+}
+
+footer .compartment p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  margin-top: 16px;
+  background: transparent;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+footer ul li {
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s;
+  background: transparent;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 20px;
+  padding-top: 20px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  background: transparent;
+}
+
 /* Responsive styles for screens up to 576px */
 @media (max-width: 576px) {
   .option button {
@@ -344,6 +413,7 @@ p {
   .navBar {
     align-items: center;
     justify-content: space-between;
+    gap: 120px;
   }
 
   .HeroContent {
@@ -393,6 +463,42 @@ p {
   .img h4 {
     margin-top: 16px;
   }
+  .runExtra {
+    flex-direction: column;
+    margin: 5% 5%;
+    gap: 20px;
+  }
+
+  .runText {
+    width: 100%;
+    margin-left: 5%;
+    margin-top: 5%;
+    overflow: hidden;
+  }
+
+  .runText h1 {
+    font-size: 36px;
+  }
+
+  .runText p {
+    font-size: 12px;
+  }
+
+  .runText .highlight {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .imgSide {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .imgSide img {
+    width: 100%;
+    height: auto;
+  }
+
   .ImgTeam {
     width: 313px;
     grid-template-columns: 1fr;
@@ -403,5 +509,30 @@ p {
   .imageWrapper {
     width: 280px;
     height: 272px;
+  }
+  footer {
+    flex-direction: column;
+  }
+
+  footer .compartment {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  footer .compartment h1 {
+    font-size: 48px;
+  }
+
+  footer .compartment h4 {
+    font-size: 24px;
+  }
+
+  footer .compartment p,
+  footer ul li {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
   }
 }
