@@ -66,9 +66,15 @@ nav .logo h1 {
 }
 
 .HeroContent {
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  ); 
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  /* flex-direction: column; */
   margin: 0 auto;
   margin-top: 62px;
 }
@@ -111,7 +117,6 @@ nav .logo h1 {
   width: 50%;
   height: 439px;
 }
-/* General button styles */
 .CTA button {
   margin-top: 24px;
   color: white;
@@ -123,23 +128,22 @@ nav .logo h1 {
   cursor: pointer;
 }
 
-/* Highlighted button styles */
 .CTA button.highlight {
   background-color: rgba(230, 83, 60, 0.85);
   border: none;
 }
 .habit {
   width: 100%;
-  padding: 20px; /* Adds some padding around the content */
+  padding: 20px; 
   display: flex;
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center align children horizontally */
-  background-color: black; /* Optional: background color for visibility */
+  flex-direction: column; 
+  align-items: center; 
+  background-color: black; 
 }
 
 .habitTitle {
   text-align: center;
-  margin-bottom: 20px; /* Adds space between title and images */
+  margin-bottom: 20px;
 }
 
 .habitTitle h2 {
@@ -165,8 +169,8 @@ nav .logo h1 {
 
 .img {
   display: flex;
-  flex-direction: column; /* Stack image and text vertically */
-  align-items: center; /* Center text horizontally */
+  flex-direction: column; 
+  align-items: center; 
 }
 
 .img img {
@@ -181,7 +185,9 @@ nav .logo h1 {
 }
 
 .img p {
-  /* Space above text */
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
+}
+@media screen (upto 576 px) {
+   
 }
